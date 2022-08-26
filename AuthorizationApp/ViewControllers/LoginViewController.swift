@@ -8,24 +8,25 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var loginTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-  
+    
     private var userName = "Swift"
     private var userPassword = "Swiftbook"
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-    super .touchesBegan(touches, with: event)
+        
+        super .touchesBegan(touches, with: event)
         self.view.endEditing(true)
     }
-
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         guard let welcomeVC = segue.destination as? WelcomeViewController else {return}
         welcomeVC.greeting = "Hello, \(loginTextField.text ?? "")!"
     }
-  
+    
     @IBAction func loginButtonPressed(_ sender: UIAlertController) {
         
         if loginTextField.text != userName || passwordTextField.text != userPassword {
@@ -40,7 +41,7 @@ class ViewController: UIViewController {
                     "OK", comment: "Default action"),
                 style: .default
             )
-        )
+            )
             self.present(wrongValuesAlert, animated: true, completion: nil)
         } else {
             return
@@ -54,9 +55,9 @@ class ViewController: UIViewController {
             preferredStyle: .alert
         )
         showLogin.addAction(UIAlertAction(
-                                title: NSLocalizedString("Close",
-                                comment: "Default action"),
-                                style: .default)
+            title: NSLocalizedString("Close",
+                                     comment: "Default action"),
+            style: .default)
         )
         self.present(showLogin, animated: true, completion: nil)
     }
@@ -68,9 +69,9 @@ class ViewController: UIViewController {
             preferredStyle: .alert
         )
         showPassword.addAction(UIAlertAction(
-                                title: NSLocalizedString("Close",
-                                comment: "Default action"),
-                                style: .default)
+            title: NSLocalizedString("Close",
+                                     comment: "Default action"),
+            style: .default)
         )
         self.present(showPassword, animated: true, completion: nil)
     }

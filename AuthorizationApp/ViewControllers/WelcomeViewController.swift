@@ -8,7 +8,7 @@
 import UIKit
 
 class WelcomeViewController: UIViewController {
-
+    
     @IBOutlet weak var greetingUserLabel: UILabel!
     
     var greeting: String!

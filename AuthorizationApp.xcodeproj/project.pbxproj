@@ -39,6 +39,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23271E8E28B96CAC003A3266 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2398B9412795BA3200D058B3 /* LoginViewController.swift */,
+				2398B9572795ECD200D058B3 /* WelcomeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		23271E8F28B96CBC003A3266 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2398B9482795BA3600D058B3 /* LaunchScreen.storyboard */,
+				2398B9432795BA3200D058B3 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		23271E9028B96CD3003A3266 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2398B94B2795BA3600D058B3 /* Info.plist */,
+				2398B93F2795BA3200D058B3 /* SceneDelegate.swift */,
+				2398B93D2795BA3200D058B3 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		23271E9128B96CE0003A3266 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				2398B9462795BA3600D058B3 /* Assets.xcassets */,
+			);
+			name = Media;
+			sourceTree = "<group>";
+		};
 		2398B9312795BA3100D058B3 = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +94,10 @@
 		2398B93C2795BA3200D058B3 /* AuthorizationApp */ = {
 			isa = PBXGroup;
 			children = (
-				2398B93D2795BA3200D058B3 /* AppDelegate.swift */,
-				2398B93F2795BA3200D058B3 /* SceneDelegate.swift */,
-				2398B9412795BA3200D058B3 /* LoginViewController.swift */,
-				2398B9432795BA3200D058B3 /* Main.storyboard */,
-				2398B9572795ECD200D058B3 /* WelcomeViewController.swift */,
-				2398B9462795BA3600D058B3 /* Assets.xcassets */,
-				2398B9482795BA3600D058B3 /* LaunchScreen.storyboard */,
-				2398B94B2795BA3600D058B3 /* Info.plist */,
+				23271E9028B96CD3003A3266 /* App */,
+				23271E8E28B96CAC003A3266 /* ViewControllers */,
+				23271E8F28B96CBC003A3266 /* Storyboards */,
+				23271E9128B96CE0003A3266 /* Media */,
 			);
 			path = AuthorizationApp;
 			sourceTree = "<group>";
